@@ -1,0 +1,332 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial',sans-serif;
+    font-size: 62.5%; /* 62.5% is 10pixels basically as (10/16)X100 is 62.5 */
+}
+.navBar{
+    height: 6rem; /* 60 pixels. */
+    background-color: #0f1111;
+    /* We can use Canva to pick out the color of a website. */
+    align-items: center;
+    justify-content: space-evenly;
+}
+.nav-logo{
+    height: 5rem;
+    width: 11.3rem;
+    /* To convert pixels to rem, use this formula: 
+    rem = pixels/global font-size.
+    In this case, rem = 113px/10px as global font-size is 10px(62.5%) */
+}
+.logo{
+    background-image: url("/images/amazon_logo.png");
+    background-size: cover; /* 'cover' is to make sure that the background image covers the entire container.*/
+    height: 5rem;
+    width: 100%;
+}
+.border:hover{
+    border: 0.15rem solid white;
+}
+.border2:hover{
+    border: 0.15rem solid white;
+}
+.address-first{
+    font-size: 1.2rem;
+    color: #cccccc;
+    margin-left: 1.6rem;
+}
+.address-second{
+    font-size: 1.8rem;
+    color: #ffffff;
+    font-family: bolder;
+    margin-left: 0.3rem;    
+}
+.fa-solid{
+    font-size: 1.8rem;
+    filter: invert(1);
+    margin-top: 0.2rem;
+}
+.add-icon{
+    text-align: center;
+}
+.nav-address{
+    /* display: flex;
+    flex-direction: column; */
+    align-items: center;
+    width: 8.3rem;
+    height: 5rem;
+    padding: 1.2rem 0.6rem;
+}
+/* Box 3 */
+.nav-search{
+    display: flex;
+    justify-content: space-evenly;
+    width: 89.771rem;
+    height: 4rem;
+    border-radius: 0.4rem;
+    position: relative;
+}
+.nav-search:hover{
+    border: 0.3rem solid orange;
+}
+.search-select{
+    background-color: #e6e6e6;
+    width: 4.5rem;
+    text-align: center;
+    border-top-left-radius: 0.4rem;
+    border-bottom-left-radius: 0.4rem;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.search-input{
+    /* border-top-right-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem; */
+    border: none;
+    width: 100%;  /* To make sure that the search bar occupies the unoccupied space.*/
+    font-size: 1.5rem;
+    padding: 0.7rem 1rem 1rem 1rem;
+    position: relative;
+}
+.search-icon{
+    width: 4.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF9900;
+    border-top-right-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+    cursor: pointer;
+    color: #000000;
+}
+/* Box 4 */
+.nav-signIn,.nav-return{
+    color: white;
+    width: 8rem;
+    height: 5rem;
+    padding: 0.7rem 0.9rem 1rem 0.9rem;
+}
+.nav-signIn{
+    width: 13rem;
+    
+}
+span{
+    font-size: 1.2rem;
+}
+.nav-second{
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+.nav-cart{
+    cursor: pointer;
+    width: 8rem;
+    height: 5rem;
+    font-size: 2.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+}
+.nav-cart i{
+    font-size: 3rem;
+}
+.nav-cart p{
+    color: white;
+    font-weight: 700;
+}
+/* Box 5 */
+.panel{
+    height: 3.9rem;
+    background: #232f3e;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    padding-right: 22rem;
+}
+.panel__ops{
+    width: 60vw;
+}
+.panel__ops p{
+    display: inline-block;
+}
+.panel__all span,.panel__ops p,.panel__deals p{
+    font-size: 1.8rem;
+    padding: 0.8rem 0.9rem;
+}
+.panel__all{
+    padding: 0.8rem 0.9rem;
+}
+.panel__all i{
+    filter: invert(0);
+}
+.panel__ops p,.panel__all,.panel__deals{
+    height: 3.8rem;
+}
+/* hero */
+.hero{
+    background-image: url('/images/hero_image.jpg');
+    height: 40rem;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.hero__msg{
+    background: white;
+    width: 97%;
+    height: 4rem;
+    color: black;
+    font-size: 1.7rem;
+    /* padding: 0.8rem 0; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+}
+.hero__msg a{
+    font-size: 1.7rem;
+    text-decoration: none;
+}
+.hero__msg a:active,.hero__msg a:visited{
+    color: rgba(25, 147, 228, 0.49);
+}
+/* shop */
+.shop{
+    width: 100%;
+    height: 100rem;
+    margin: auto;
+    border: 2px solid white;
+    justify-content: space-evenly;
+    background: #e2e7e6;
+    padding-top: 2.5rem;
+    flex-wrap: wrap;
+}
+.shop__box{
+    width: 35rem;
+    height: 42rem;
+    border: 2px solid white;
+    background: white;
+    padding: 20px 0px 15px 0;
+}
+.shop__img{
+    height: 30.57rem;
+    max-width: 90%;
+    margin: auto;
+    background-size: contain;
+    margin-top: 1rem;
+    margin-bottom: 2.3rem;
+}
+.shop__heading{
+    font-size: 2.1rem;
+    padding: 0px 1.5rem;
+}
+.shop__link{
+    font-size: 1.6rem;
+    text-decoration: none;
+    padding: 0px 1.5rem;
+}
+.shop__link:hover,.shop__link:visited{
+    color: rgba(25, 147, 228, 0.49);
+}
+.foot-panel1{
+    background: #37475a;
+    color: white;
+    height: 4.9rem;
+    font-size: 2rem;
+    text-align: center;
+    padding: 1.3rem 0;
+    margin-top: -2rem;
+}
+.foot-panel2{
+    background: #222f38;
+    height: 50vh;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5rem 0;
+}
+.foot-panel2__paragraph{
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+.foot-panel2__link{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: #DDDDDD;
+}   
+.foot-panel2__list{
+    display: flex;
+    flex-direction: column;
+}         
+ /* foot-panel3  */
+.foot-panel3{
+    background: #222f38;
+    height: 12vh;
+    color: white;
+    border-top: 1px solid white;
+    margin-top: -3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foot-panel3__logo{
+    background-image: url('/images/amazon_logo.png');
+    background-size: cover;
+    width: 10rem;
+    height: 5rem;
+    margin-right: 8rem;
+}
+.foot-panel3__globe{
+    filter: invert(0);
+    font-size: 1.3rem;
+}
+.foot-panel3__language{
+    width: 9rem;
+    height: 3rem;
+    font-size: 1.7rem;
+    gap: 0.4rem;
+    padding: 1rem 1rem;
+}
+.foot-panel3__en{
+    font-size: 1rem;
+    padding: 0rem 0.5rem;
+}
+.foot-panel3__currency{
+    width: 12rem;
+    height: 3rem;
+    padding: 1rem 1rem;
+}
+.foot-panel3__country{
+    width: 7rem;
+    height: 3rem;
+    padding: 1rem 1rem;
+}
+.foot-panel3__currencyLogo{
+    font-size: 1rem;
+}
+.foot-panel3__language,.foot-panel3__country,.foot-panel3__currency{
+    margin-right: 0.8rem;
+}
+.foot-panel4{
+    background: #0f1111;
+    height: 14vh;
+    font-size: 2rem;
+    text-align: center;
+    padding: 3rem 0 2.9rem 0rem;
+}
+.foot-panel4__link{
+    color: #DDDDDD;
+    font-size: 1.3rem;
+    padding: 0rem 0.72rem;
+    text-decoration: none;
+}
+.foot-panel4__link:hover{
+    text-decoration: underline;
+}
+.foot-panel4__copyRight{
+    color: #DDDDDD;
+    padding-top: 1rem;
+}
+

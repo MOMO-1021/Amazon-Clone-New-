@@ -1,0 +1,22 @@
+.border{
+    border: 0.15rem solid #0f1111;
+}
+.border2{
+    border: 0.15rem solid #232f3e;
+}
+.border3{
+    border: 0.15rem solid white;
+    border-radius: 0.3rem;
+}
+.flex{
+    display: flex;
+}
+.nav-second{
+    font-size: 1.4rem;
+}
+.margin-bottom{
+    margin-bottom: 1.3rem;
+}
+.foot-panel2__link-part{
+    display: none;
+}
